@@ -1,5 +1,5 @@
 class Anagram
-  attr_accessor: words
+  attr_reader: words
   
   def initialize(words)
     @words = words
