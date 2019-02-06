@@ -5,6 +5,11 @@ class Anagram
     @words = words
   end
   
+  def match(str)
+    str.split.each do |word|
+      word.sort == words.sort
+    end
+  end
   
 
 end
