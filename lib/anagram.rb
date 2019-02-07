@@ -5,9 +5,9 @@ class Anagram
     @words = words
   end
   
-  def match(array_of_words)
+  def match(str)
   
-    array_of_words.detect do |word|
+    str.detect do |word|
       word.split("").sort == words.split("").sort
     end
   
